@@ -29,8 +29,10 @@ public class Login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
@@ -43,41 +45,22 @@ public class Login extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
-        jPanel11 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(900, 500));
-        setPreferredSize(new java.awt.Dimension(900, 500));
+        setMinimumSize(new java.awt.Dimension(900, 550));
+        setPreferredSize(new java.awt.Dimension(900, 550));
 
+        jPanel1.setMinimumSize(new java.awt.Dimension(900, 500));
         jPanel1.setPreferredSize(new java.awt.Dimension(325, 0));
 
-        jPanel3.setPreferredSize(new java.awt.Dimension(400, 100));
+        jPanel3.setPreferredSize(new java.awt.Dimension(400, 170));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Welcome Back");
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(135, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(130, 130, 130))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jLabel1)
-                .addContainerGap(39, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel3);
-
-        jPanel4.setPreferredSize(new java.awt.Dimension(400, 50));
 
         jButton1.setText("Log in with Google");
         jButton1.setPreferredSize(new java.awt.Dimension(245, 30));
@@ -86,7 +69,38 @@ public class Login extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton1);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(82, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(85, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jPanel1.add(jPanel3);
+
+        jPanel4.setPreferredSize(new java.awt.Dimension(400, 30));
+
+        jPanel11.setPreferredSize(new java.awt.Dimension(400, 30));
+
+        jLabel5.setText("OR LOGIN IN EMAIL");
+        jPanel11.add(jLabel5);
+
+        jPanel4.add(jPanel11);
 
         jPanel1.add(jPanel4);
 
@@ -119,7 +133,7 @@ public class Login extends javax.swing.JFrame {
         jPanel8.setPreferredSize(new java.awt.Dimension(260, 25));
         jPanel8.setLayout(new java.awt.BorderLayout());
 
-        jCheckBox1.setText("Remember me");
+        jCheckBox1.setText("Keep me logged in");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
@@ -148,12 +162,16 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.add(jPanel10);
 
-        jPanel11.setPreferredSize(new java.awt.Dimension(400, 50));
+        jPanel12.setPreferredSize(new java.awt.Dimension(400, 50));
 
-        jLabel5.setText("Don't have an account yet? Sign up.");
-        jPanel11.add(jLabel5);
+        jLabel7.setText("Don't have an account yet?");
+        jPanel12.add(jLabel7);
 
-        jPanel1.add(jPanel11);
+        jLabel8.setForeground(new java.awt.Color(255, 102, 102));
+        jLabel8.setText("Sign up.");
+        jPanel12.add(jLabel8);
+
+        jPanel1.add(jPanel12);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.WEST);
 
@@ -164,11 +182,11 @@ public class Login extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 778, Short.MAX_VALUE)
+            .addGap(0, 575, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 434, Short.MAX_VALUE)
+            .addGap(0, 500, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
@@ -181,7 +199,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
+//        // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
@@ -236,9 +254,12 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;

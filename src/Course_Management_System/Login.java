@@ -1,6 +1,8 @@
 
 package Course_Management_System;
 
+import java.awt.Font;
+
 public class Login extends javax.swing.JFrame {
 
  
@@ -149,7 +151,8 @@ public class Login extends javax.swing.JFrame {
         emailPasswordContainer.add(password);
 
         keepme_forgot.setBackground(new java.awt.Color(255, 255, 255));
-        keepme_forgot.setPreferredSize(new java.awt.Dimension(255, 25));
+        keepme_forgot.setMinimumSize(new java.awt.Dimension(250, 21));
+        keepme_forgot.setPreferredSize(new java.awt.Dimension(250, 25));
         keepme_forgot.setLayout(new java.awt.BorderLayout());
 
         keepmeLabel.setBackground(java.awt.Color.white);
@@ -164,9 +167,22 @@ public class Login extends javax.swing.JFrame {
 
         forgotLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         forgotLabel.setForeground(new java.awt.Color(255, 51, 51));
-        forgotLabel.setText("Forgot password");
+        forgotLabel.setText("           Forgot password");
+        forgotLabel.setMaximumSize(new java.awt.Dimension(90, 13));
+        forgotLabel.setMinimumSize(new java.awt.Dimension(90, 13));
         forgotLabel.setPreferredSize(new java.awt.Dimension(90, 15));
-        keepme_forgot.add(forgotLabel, java.awt.BorderLayout.LINE_END);
+        forgotLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                forgotLabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                forgotLabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                forgotLabelMouseExited(evt);
+            }
+        });
+        keepme_forgot.add(forgotLabel, java.awt.BorderLayout.CENTER);
 
         emailPasswordContainer.add(keepme_forgot);
 
@@ -217,7 +233,26 @@ public class Login extends javax.swing.JFrame {
 
         signupLabel.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         signupLabel.setForeground(new java.awt.Color(255, 51, 51));
-        signupLabel.setText("Sign up.");
+        signupLabel.setText("Sign up");
+        signupLabel.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                signupLabelFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                signupLabelFocusLost(evt);
+            }
+        });
+        signupLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                signupLabelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                signupLabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                signupLabelMouseExited(evt);
+            }
+        });
         signupPanel.add(signupLabel);
 
         jPanel1.add(signupPanel);
@@ -246,6 +281,39 @@ public class Login extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1034, 560));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void signupLabelFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_signupLabelFocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_signupLabelFocusGained
+
+    private void signupLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupLabelMouseClicked
+new Signup().setVisible(true);
+this.dispose();
+    }//GEN-LAST:event_signupLabelMouseClicked
+
+    private void signupLabelFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_signupLabelFocusLost
+        // TODO add your handling code here:
+    }//GEN-LAST:event_signupLabelFocusLost
+
+    private void signupLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupLabelMouseEntered
+signupLabel.setFont(signupLabel.getFont().deriveFont(Font.BOLD));        // TODO add your handling code here:
+    }//GEN-LAST:event_signupLabelMouseEntered
+
+    private void signupLabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupLabelMouseExited
+signupLabel.setFont(signupLabel.getFont().deriveFont(Font.PLAIN));        // TODO add your handling code here:
+    }//GEN-LAST:event_signupLabelMouseExited
+
+    private void forgotLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_forgotLabelMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_forgotLabelMouseClicked
+
+    private void forgotLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_forgotLabelMouseEntered
+forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.BOLD));        // TODO add your handling code here:
+    }//GEN-LAST:event_forgotLabelMouseEntered
+
+    private void forgotLabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_forgotLabelMouseExited
+forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.PLAIN));           // TODO add your handling code here:
+    }//GEN-LAST:event_forgotLabelMouseExited
 
     private void loginGoogleActionPerformed(java.awt.event.ActionEvent evt) {}
       

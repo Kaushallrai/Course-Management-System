@@ -117,7 +117,7 @@ public class Signup extends javax.swing.JFrame {
         jLabel6.setText("First Name*");
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel7.setText("Second Name*");
+        jLabel7.setText("Last Name*");
 
         jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -312,7 +312,7 @@ public class Signup extends javax.swing.JFrame {
             .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 590, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 566, Short.MAX_VALUE)
+                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -322,7 +322,7 @@ public class Signup extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 279, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 

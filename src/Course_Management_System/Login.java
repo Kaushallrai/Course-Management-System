@@ -1,18 +1,16 @@
 
 package Course_Management_System;
 
-import java.awt.Color;
 import java.awt.Font;
-import java.awt.event.MouseEvent;
 
 public class Login extends javax.swing.JFrame {
 
- 
     public Login() {
         initComponents();
     }
 
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -67,9 +65,11 @@ public class Login extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 loginGoogleMouseClicked(evt);
             }
+
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 loginGoogleMouseEntered(evt);
             }
+
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 loginGoogleMouseExited(evt);
             }
@@ -86,30 +86,36 @@ public class Login extends javax.swing.JFrame {
         javax.swing.GroupLayout top_sectionLayout = new javax.swing.GroupLayout(top_section);
         top_section.setLayout(top_sectionLayout);
         top_sectionLayout.setHorizontalGroup(
-            top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(top_sectionLayout.createSequentialGroup()
-                .addGroup(top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(top_sectionLayout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addGroup(top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(Welcome_text)
-                            .addComponent(loginGoogle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(top_sectionLayout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(80, Short.MAX_VALUE))
-        );
+                top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(top_sectionLayout.createSequentialGroup()
+                                .addGroup(top_sectionLayout
+                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(top_sectionLayout.createSequentialGroup()
+                                                .addGap(75, 75, 75)
+                                                .addGroup(top_sectionLayout
+                                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                                                        .addComponent(Welcome_text)
+                                                        .addComponent(loginGoogle,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(top_sectionLayout.createSequentialGroup()
+                                                .addGap(59, 59, 59)
+                                                .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                        javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                        javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap(80, Short.MAX_VALUE)));
         top_sectionLayout.setVerticalGroup(
-            top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, top_sectionLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(wlvIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Welcome_text)
-                .addGap(18, 18, 18)
-                .addComponent(loginGoogle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+                top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, top_sectionLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(wlvIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Welcome_text)
+                                .addGap(18, 18, 18)
+                                .addComponent(loginGoogle, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap()));
 
         jPanel1.add(top_section);
 
@@ -188,9 +194,11 @@ public class Login extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 forgotLabelMouseClicked(evt);
             }
+
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 forgotLabelMouseEntered(evt);
             }
+
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 forgotLabelMouseExited(evt);
             }
@@ -218,21 +226,24 @@ public class Login extends javax.swing.JFrame {
         javax.swing.GroupLayout loginLayout = new javax.swing.GroupLayout(login);
         login.setLayout(loginLayout);
         loginLayout.setHorizontalGroup(
-            loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loginLayout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addGroup(loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(loginButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jSeparator1)))
-        );
+                loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(loginLayout.createSequentialGroup()
+                                .addGap(75, 75, 75)
+                                .addGroup(loginLayout
+                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(loginButton, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jSeparator1))));
         loginLayout.setVerticalGroup(
-            loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loginLayout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+                loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(loginLayout.createSequentialGroup()
+                                .addGap(5, 5, 5)
+                                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28,
+                                        Short.MAX_VALUE)
+                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 12,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)));
 
         jPanel1.add(login);
 
@@ -251,6 +262,7 @@ public class Login extends javax.swing.JFrame {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 signupLabelFocusGained(evt);
             }
+
             public void focusLost(java.awt.event.FocusEvent evt) {
                 signupLabelFocusLost(evt);
             }
@@ -259,9 +271,11 @@ public class Login extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 signupLabelMouseClicked(evt);
             }
+
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 signupLabelMouseEntered(evt);
             }
+
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 signupLabelMouseExited(evt);
             }
@@ -295,65 +309,66 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void signupLabelFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_signupLabelFocusGained
+    private void signupLabelFocusGained(java.awt.event.FocusEvent evt) {// GEN-FIRST:event_signupLabelFocusGained
         // TODO add your handling code here:
-    }//GEN-LAST:event_signupLabelFocusGained
+    }// GEN-LAST:event_signupLabelFocusGained
 
-    private void signupLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupLabelMouseClicked
-new Signup().setVisible(true);
-this.dispose();
-    }//GEN-LAST:event_signupLabelMouseClicked
+    private void signupLabelMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_signupLabelMouseClicked
+        new Signup().setVisible(true);
+        this.dispose();
+    }// GEN-LAST:event_signupLabelMouseClicked
 
-    private void signupLabelFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_signupLabelFocusLost
+    private void signupLabelFocusLost(java.awt.event.FocusEvent evt) {// GEN-FIRST:event_signupLabelFocusLost
         // TODO add your handling code here:
-    }//GEN-LAST:event_signupLabelFocusLost
+    }// GEN-LAST:event_signupLabelFocusLost
 
-    private void signupLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupLabelMouseEntered
-signupLabel.setFont(signupLabel.getFont().deriveFont(Font.BOLD));        // TODO add your handling code here:
-    }//GEN-LAST:event_signupLabelMouseEntered
+    private void signupLabelMouseEntered(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_signupLabelMouseEntered
+        signupLabel.setFont(signupLabel.getFont().deriveFont(Font.BOLD)); // TODO add your handling code here:
+    }// GEN-LAST:event_signupLabelMouseEntered
 
-    private void signupLabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupLabelMouseExited
-signupLabel.setFont(signupLabel.getFont().deriveFont(Font.PLAIN));        // TODO add your handling code here:
-    }//GEN-LAST:event_signupLabelMouseExited
+    private void signupLabelMouseExited(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_signupLabelMouseExited
+        signupLabel.setFont(signupLabel.getFont().deriveFont(Font.PLAIN)); // TODO add your handling code here:
+    }// GEN-LAST:event_signupLabelMouseExited
 
-    private void forgotLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_forgotLabelMouseClicked
+    private void forgotLabelMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_forgotLabelMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_forgotLabelMouseClicked
+    }// GEN-LAST:event_forgotLabelMouseClicked
 
-    private void forgotLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_forgotLabelMouseEntered
-forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.BOLD));        // TODO add your handling code here:
-    }//GEN-LAST:event_forgotLabelMouseEntered
+    private void forgotLabelMouseEntered(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_forgotLabelMouseEntered
+        forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.BOLD)); // TODO add your handling code here:
+    }// GEN-LAST:event_forgotLabelMouseEntered
 
-    private void forgotLabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_forgotLabelMouseExited
-forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.PLAIN));           // TODO add your handling code here:
-    }//GEN-LAST:event_forgotLabelMouseExited
+    private void forgotLabelMouseExited(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_forgotLabelMouseExited
+        forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.PLAIN)); // TODO add your handling code here:
+    }// GEN-LAST:event_forgotLabelMouseExited
 
-    private void loginGoogleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginGoogleMouseClicked
+    private void loginGoogleMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_loginGoogleMouseClicked
         new Google().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_loginGoogleMouseClicked
+    }// GEN-LAST:event_loginGoogleMouseClicked
 
-    private void loginGoogleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginGoogleMouseEntered
+    private void loginGoogleMouseEntered(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_loginGoogleMouseEntered
 
-    }//GEN-LAST:event_loginGoogleMouseEntered
+    }// GEN-LAST:event_loginGoogleMouseEntered
 
-    private void loginGoogleMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginGoogleMouseExited
-    // TODO add your handling code here:
-    }//GEN-LAST:event_loginGoogleMouseExited
+    private void loginGoogleMouseExited(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_loginGoogleMouseExited
+        // TODO add your handling code here:
+    }// GEN-LAST:event_loginGoogleMouseExited
 
-    private void loginGoogleActionPerformed(java.awt.event.ActionEvent evt) {}
-      
+    private void loginGoogleActionPerformed(java.awt.event.ActionEvent evt) {
+    }
+
     private void emailTextFieldsActionPerformed(java.awt.event.ActionEvent evt) {
-        
+
     }
 
     private void keepmeLabelActionPerformed(java.awt.event.ActionEvent evt) {
     }
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {
-     
+
     }
- 
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Welcome_text;
     private javax.swing.JLabel dont_have_an_accountLabel;

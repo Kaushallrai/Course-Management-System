@@ -1,7 +1,9 @@
 
 package Course_Management_System;
 
+import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.MouseEvent;
 
 public class Login extends javax.swing.JFrame {
 
@@ -38,8 +40,8 @@ public class Login extends javax.swing.JFrame {
         dont_have_an_accountLabel = new javax.swing.JLabel();
         signupLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        wlv1 = new javax.swing.JPanel();
+        png1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -61,6 +63,17 @@ public class Login extends javax.swing.JFrame {
         loginGoogle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/icons8_google_16px_1.png"))); // NOI18N
         loginGoogle.setText("Log in with Google");
         loginGoogle.setPreferredSize(new java.awt.Dimension(245, 30));
+        loginGoogle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                loginGoogleMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                loginGoogleMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                loginGoogleMouseExited(evt);
+            }
+        });
         loginGoogle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginGoogleActionPerformed(evt);
@@ -265,18 +278,18 @@ public class Login extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.WEST);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setMinimumSize(new java.awt.Dimension(693, 560));
-        jPanel2.setPreferredSize(new java.awt.Dimension(693, 560));
-        jPanel2.setLayout(new java.awt.CardLayout());
+        wlv1.setBackground(new java.awt.Color(255, 255, 255));
+        wlv1.setMinimumSize(new java.awt.Dimension(693, 560));
+        wlv1.setPreferredSize(new java.awt.Dimension(693, 560));
+        wlv1.setLayout(new java.awt.CardLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/University of Wolverhampton main.jpg"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        jLabel2.setMinimumSize(new java.awt.Dimension(690, 560));
-        jLabel2.setPreferredSize(new java.awt.Dimension(690, 560));
-        jPanel2.add(jLabel2, "card2");
+        png1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/University of Wolverhampton main.jpg"))); // NOI18N
+        png1.setText("jLabel2");
+        png1.setMinimumSize(new java.awt.Dimension(690, 560));
+        png1.setPreferredSize(new java.awt.Dimension(690, 560));
+        wlv1.add(png1, "card2");
 
-        getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
+        getContentPane().add(wlv1, java.awt.BorderLayout.CENTER);
 
         setSize(new java.awt.Dimension(1034, 560));
         setLocationRelativeTo(null);
@@ -315,6 +328,19 @@ forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.BOLD));        // TODO
 forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.PLAIN));           // TODO add your handling code here:
     }//GEN-LAST:event_forgotLabelMouseExited
 
+    private void loginGoogleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginGoogleMouseClicked
+        new Google().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_loginGoogleMouseClicked
+
+    private void loginGoogleMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginGoogleMouseEntered
+
+    }//GEN-LAST:event_loginGoogleMouseEntered
+
+    private void loginGoogleMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginGoogleMouseExited
+    // TODO add your handling code here:
+    }//GEN-LAST:event_loginGoogleMouseExited
+
     private void loginGoogleActionPerformed(java.awt.event.ActionEvent evt) {}
       
     private void emailTextFieldsActionPerformed(java.awt.event.ActionEvent evt) {
@@ -327,8 +353,7 @@ forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.PLAIN));           // 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {
      
     }
-
-
+ 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Welcome_text;
     private javax.swing.JLabel dont_have_an_accountLabel;
@@ -338,10 +363,8 @@ forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.PLAIN));           // 
     private javax.swing.JTextField emailTextFields;
     private javax.swing.JLabel forgotLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JCheckBox keepmeLabel;
     private javax.swing.JPanel keepme_forgot;
@@ -353,9 +376,11 @@ forgotLabel.setFont(forgotLabel.getFont().deriveFont(Font.PLAIN));           // 
     private javax.swing.JPanel password;
     private javax.swing.JPasswordField passwordField;
     private javax.swing.JLabel passwordLabel;
+    private javax.swing.JLabel png1;
     private javax.swing.JLabel signupLabel;
     private javax.swing.JPanel signupPanel;
     private javax.swing.JPanel top_section;
+    private javax.swing.JPanel wlv1;
     private javax.swing.JLabel wlvIcon;
     // End of variables declaration//GEN-END:variables
 }

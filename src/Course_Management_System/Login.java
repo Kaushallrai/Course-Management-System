@@ -42,7 +42,7 @@ public class Login extends javax.swing.JFrame {
         png1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setAutoRequestFocus(false);
+        setTitle("WolvPortal ");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMinimumSize(new java.awt.Dimension(1034, 560));
         setResizable(false);

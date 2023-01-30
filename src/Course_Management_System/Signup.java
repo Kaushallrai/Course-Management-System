@@ -56,10 +56,12 @@ public class Signup extends javax.swing.JFrame {
         png2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("WolvPortal ");
         setBackground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1034, 560));
         setMinimumSize(new java.awt.Dimension(1034, 560));
         setPreferredSize(new java.awt.Dimension(1034, 560));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         signUp_panel.setBackground(new java.awt.Color(255, 255, 255));

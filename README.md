@@ -7,8 +7,8 @@ This system is designed to meet the needs of administrators, teachers, and stude
 ## Screenshots
 
 ![Login Page](screenshots/Login.png)
-![Forgot Password Page](screenshots/Forgot Password.png)
-![Sign up Page](screenshots/Sign up.png)
+![Forgot Password Page](screenshots/Forgot_Password.png)
+![Sign up Page](screenshots/Sign_up.png)
 
 ## Contribution
 

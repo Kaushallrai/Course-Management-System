@@ -46,7 +46,6 @@ public class Login extends javax.swing.JFrame {
         png1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("WolvPortal ");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMinimumSize(new java.awt.Dimension(1034, 560));
         setResizable(false);
@@ -319,7 +318,8 @@ public class Login extends javax.swing.JFrame {
     }// GEN-LAST:event_signupLabelMouseExited
 
     private void forgotLabelMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_forgotLabelMouseClicked
-        // TODO add your handling code here:
+       new ForgotPassword().setVisible(true);
+       this.dispose();
     }// GEN-LAST:event_forgotLabelMouseClicked
 
     private void forgotLabelMouseEntered(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_forgotLabelMouseEntered

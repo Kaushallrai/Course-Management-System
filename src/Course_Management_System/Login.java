@@ -2,11 +2,15 @@
 package Course_Management_System;
 
 import java.awt.Font;
+import javax.swing.JFrame;
 
 public class Login extends javax.swing.JFrame {
 
     public Login() {
         initComponents();
+         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+    addWindowListener(new ExitConfirmationWindowListener());
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated

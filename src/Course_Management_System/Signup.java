@@ -2,6 +2,7 @@ package Course_Management_System;
 
 import java.awt.Font;
 import java.text.SimpleDateFormat;
+import javax.swing.JFrame;
 
 public class Signup extends javax.swing.JFrame {
 
@@ -10,6 +11,8 @@ public class Signup extends javax.swing.JFrame {
      */
     public Signup() {
         initComponents();
+           setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+    addWindowListener(new ExitConfirmationWindowListener());
     }
 
     /**

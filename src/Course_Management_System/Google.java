@@ -4,6 +4,8 @@
  */
 package Course_Management_System;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author kaush
@@ -15,6 +17,8 @@ public class Google extends javax.swing.JFrame {
      */
     public Google() {
         initComponents();
+           setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+    addWindowListener(new ExitConfirmationWindowListener());
     }
 
     /**

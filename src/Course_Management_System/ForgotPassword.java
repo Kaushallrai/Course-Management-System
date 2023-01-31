@@ -39,10 +39,11 @@ public class ForgotPassword extends javax.swing.JFrame {
         p3 = new javax.swing.JLabel();
         wlvIcon = new javax.swing.JLabel();
         email_label = new javax.swing.JLabel();
-        email_textfield = new javax.swing.JTextField();
+        emailTextField = new javax.swing.JTextField();
         Reset_button = new javax.swing.JButton();
-        email_label1 = new javax.swing.JLabel();
+        member_label = new javax.swing.JLabel();
         signup_label = new javax.swing.JLabel();
+        invalidEmail = new javax.swing.JLabel();
         wlv3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -81,10 +82,10 @@ public class ForgotPassword extends javax.swing.JFrame {
         email_label.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         email_label.setText("Email Address");
 
-        email_textfield.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        email_textfield.addActionListener(new java.awt.event.ActionListener() {
+        emailTextField.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        emailTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                email_textfieldActionPerformed(evt);
+                emailTextFieldActionPerformed(evt);
             }
         });
 
@@ -96,9 +97,9 @@ public class ForgotPassword extends javax.swing.JFrame {
             }
         });
 
-        email_label1.setBackground(new java.awt.Color(255, 255, 255));
-        email_label1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        email_label1.setText("Not a member?");
+        member_label.setBackground(new java.awt.Color(255, 255, 255));
+        member_label.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        member_label.setText("Not a member?");
 
         signup_label.setBackground(new java.awt.Color(255, 255, 255));
         signup_label.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -116,44 +117,51 @@ public class ForgotPassword extends javax.swing.JFrame {
             }
         });
 
+        invalidEmail.setFont(new java.awt.Font("Arial", 0, 8)); // NOI18N
+        invalidEmail.setForeground(new java.awt.Color(255, 51, 51));
+        invalidEmail.setPreferredSize(new java.awt.Dimension(0, 5));
+
         javax.swing.GroupLayout FYPLayout = new javax.swing.GroupLayout(FYP);
         FYP.setLayout(FYPLayout);
         FYPLayout.setHorizontalGroup(
             FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FYPLayout.createSequentialGroup()
-                .addGap(116, 116, 116)
-                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(p1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(p2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(FYPLayout.createSequentialGroup()
-                        .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(p3)
-                            .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(email_label, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(email_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 84, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(FYPLayout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FYPLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(email_label1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(signup_label)
-                .addGap(27, 27, 27))
+            .addGroup(FYPLayout.createSequentialGroup()
+                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FYPLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(member_label)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(signup_label, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FYPLayout.createSequentialGroup()
+                        .addGap(116, 116, 116)
+                        .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(p1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(p2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(FYPLayout.createSequentialGroup()
+                                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(p3)
+                                    .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(email_label, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(invalidEmail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(Reset_button, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)))
+                                .addGap(0, 84, Short.MAX_VALUE)))))
+                .addContainerGap())
         );
         FYPLayout.setVerticalGroup(
             FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FYPLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(email_label1)
+                    .addComponent(member_label)
                     .addComponent(signup_label))
                 .addGap(58, 58, 58)
-                .addComponent(wlvIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
+                .addComponent(wlvIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -165,10 +173,12 @@ public class ForgotPassword extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addComponent(email_label)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(email_textfield, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(invalidEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
 
         getContentPane().add(FYP);
@@ -199,12 +209,16 @@ public class ForgotPassword extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void email_textfieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_email_textfieldActionPerformed
+    private void emailTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_email_textfieldActionPerformed
+    }//GEN-LAST:event_emailTextFieldActionPerformed
 
     private void Reset_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Reset_buttonActionPerformed
-JOptionPane.showMessageDialog(ForgotPassword.this, "A password reset link has been sent to your email.");        // TODO add your handling code here:
+if (emailTextField.getText().trim().isEmpty()) {
+            invalidEmail.setText("Email address field is Empty");}
+else{
+        JOptionPane.showMessageDialog(ForgotPassword.this, "A password reset link has been sent to your email.");   
+}     // TODO add your handling code here:
     }//GEN-LAST:event_Reset_buttonActionPerformed
 
     private void signup_labelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signup_labelMouseClicked
@@ -259,10 +273,11 @@ signup_label.setFont(signup_label.getFont().deriveFont(Font.PLAIN));        // T
     private javax.swing.JPanel FYP;
     private javax.swing.JLabel FYP_label;
     private javax.swing.JButton Reset_button;
+    private javax.swing.JTextField emailTextField;
     private javax.swing.JLabel email_label;
-    private javax.swing.JLabel email_label1;
-    private javax.swing.JTextField email_textfield;
+    private javax.swing.JLabel invalidEmail;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel member_label;
     private javax.swing.JLabel p1;
     private javax.swing.JLabel p2;
     private javax.swing.JLabel p3;

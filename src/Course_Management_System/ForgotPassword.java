@@ -44,6 +44,7 @@ public class ForgotPassword extends javax.swing.JFrame {
         member_label = new javax.swing.JLabel();
         signup_label = new javax.swing.JLabel();
         invalidEmail = new javax.swing.JLabel();
+        back_label = new javax.swing.JLabel();
         wlv3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -121,47 +122,73 @@ public class ForgotPassword extends javax.swing.JFrame {
         invalidEmail.setForeground(new java.awt.Color(255, 51, 51));
         invalidEmail.setPreferredSize(new java.awt.Dimension(0, 5));
 
+        back_label.setBackground(new java.awt.Color(0, 0, 0));
+        back_label.setFont(new java.awt.Font("Dialog", 0, 32)); // NOI18N
+        back_label.setText("⬅");
+        back_label.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                back_labelMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                back_labelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                back_labelMouseExited(evt);
+            }
+        });
+
         javax.swing.GroupLayout FYPLayout = new javax.swing.GroupLayout(FYP);
         FYP.setLayout(FYPLayout);
         FYPLayout.setHorizontalGroup(
             FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FYPLayout.createSequentialGroup()
-                .addGap(86, 86, 86)
-                .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(FYPLayout.createSequentialGroup()
-                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FYPLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(member_label)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(signup_label, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(FYPLayout.createSequentialGroup()
-                        .addGap(116, 116, 116)
+                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FYPLayout.createSequentialGroup()
+                        .addGap(86, 86, 86)
                         .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(p1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(p2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(FYPLayout.createSequentialGroup()
                                 .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(p3)
-                                    .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(email_label, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(invalidEmail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(Reset_button, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)))
-                                .addGap(0, 84, Short.MAX_VALUE)))))
+                                    .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(FYPLayout.createSequentialGroup()
+                                        .addGap(25, 25, 25)
+                                        .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(FYPLayout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(p2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(p1, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
+                                    .addGroup(FYPLayout.createSequentialGroup()
+                                        .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(email_label, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(p3)
+                                            .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(invalidEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(Reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(0, 0, Short.MAX_VALUE))))))
+                    .addGroup(FYPLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(back_label)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(member_label)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(signup_label, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         FYPLayout.setVerticalGroup(
             FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(FYPLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(member_label)
-                    .addComponent(signup_label))
-                .addGap(58, 58, 58)
-                .addComponent(wlvIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
+                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(FYPLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(back_label, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(FYPLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(member_label)
+                            .addComponent(signup_label))))
+                .addGap(51, 51, 51)
+                .addComponent(wlvIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -170,15 +197,15 @@ public class ForgotPassword extends javax.swing.JFrame {
                 .addComponent(p2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(p3)
-                .addGap(56, 56, 56)
+                .addGap(69, 69, 69)
                 .addComponent(email_label)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(5, 5, 5)
                 .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(invalidEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(1, 1, 1)
+                .addComponent(invalidEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(1, 1, 1)
                 .addComponent(Reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
         );
 
         getContentPane().add(FYP);
@@ -234,6 +261,19 @@ signup_label.setFont(signup_label.getFont().deriveFont(Font.BOLD));        // TO
 signup_label.setFont(signup_label.getFont().deriveFont(Font.PLAIN));        // TODO add your handling code here:
     }//GEN-LAST:event_signup_labelMouseExited
 
+    private void back_labelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_back_labelMouseClicked
+new Login().setVisible(true);
+        this.dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_back_labelMouseClicked
+
+    private void back_labelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_back_labelMouseEntered
+back_label.setFont(back_label.getFont().deriveFont(Font.BOLD));        // TODO add your handling code here:
+    }//GEN-LAST:event_back_labelMouseEntered
+
+    private void back_labelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_back_labelMouseExited
+      back_label.setFont(back_label.getFont().deriveFont(Font.PLAIN));  // TODO add your handling code here:
+    }//GEN-LAST:event_back_labelMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -273,6 +313,7 @@ signup_label.setFont(signup_label.getFont().deriveFont(Font.PLAIN));        // T
     private javax.swing.JPanel FYP;
     private javax.swing.JLabel FYP_label;
     private javax.swing.JButton Reset_button;
+    private javax.swing.JLabel back_label;
     private javax.swing.JTextField emailTextField;
     private javax.swing.JLabel email_label;
     private javax.swing.JLabel invalidEmail;

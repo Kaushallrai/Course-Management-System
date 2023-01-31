@@ -187,7 +187,6 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="password_passwordfield" max="32767" attributes="0"/>
-                                          <Component id="dob_textfield" max="32767" attributes="0"/>
                                           <Component id="firstName_label" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="firstName_textfield" alignment="0" max="32767" attributes="0"/>
                                           <Component id="dob_label" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -195,16 +194,17 @@
                                           <Component id="email_label" min="-2" max="-2" attributes="0"/>
                                           <Component id="password_label" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jLabel1" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="invalidFirstName" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                                       <Component id="invalidDOB" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                                       <Component id="invalidEmail" alignment="0" min="-2" pref="168" max="-2" attributes="0"/>
                                   </Group>
+                                  <Component id="dob_textfield" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="invalidPhoneNumber" min="-2" pref="168" max="-2" attributes="0"/>
                                   <Component id="invalidAddress" min="-2" pref="168" max="-2" attributes="0"/>
-                                  <Component id="jLabel3" min="-2" pref="168" max="-2" attributes="0"/>
+                                  <Component id="invalidLastName" min="-2" pref="168" max="-2" attributes="0"/>
                                   <Component id="phoneNumber_textfield" max="32767" attributes="0"/>
                                   <Component id="phoneNumber_label" min="-2" max="-2" attributes="0"/>
                                   <Component id="address_label" min="-2" max="-2" attributes="0"/>
@@ -235,8 +235,8 @@
                       </Group>
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="invalidFirstName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="invalidLastName" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -244,9 +244,9 @@
                           <Component id="dob_label" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="address_textfield" max="32767" attributes="0"/>
-                          <Component id="dob_textfield" pref="29" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="address_textfield" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="dob_textfield" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -352,14 +352,6 @@
                 <Property name="text" type="java.lang.String" value="Address*"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JFormattedTextField" name="dob_textfield">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dob_textfieldActionPerformed"/>
-              </Events>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="dob_textfield = new javax.swing.JFormattedTextField(new SimpleDateFormat(&quot;dd/MM/yyyy&quot;));&#xd;&#xa;"/>
-              </AuxValues>
-            </Component>
             <Component class="javax.swing.JTextField" name="address_textfield">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -440,7 +432,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="terms_and_services_checkboxActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel1">
+            <Component class="javax.swing.JLabel" name="invalidFirstName">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="8" style="0"/>
@@ -462,7 +454,7 @@
                 <Property name="text" type="java.lang.String" value=" "/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel3">
+            <Component class="javax.swing.JLabel" name="invalidLastName">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Arial" size="8" style="0"/>
@@ -527,6 +519,16 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value=" "/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="dob_textfield">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Arial" size="12" style="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dob_textfieldActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

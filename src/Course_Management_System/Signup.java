@@ -235,7 +235,7 @@ public class Signup extends javax.swing.JFrame {
         input_panelLayout.setHorizontalGroup(
             input_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(input_panelLayout.createSequentialGroup()
-                .addGap(60, 60, 60)
+                .addGap(44, 44, 44)
                 .addGroup(input_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(terms_and_services_checkbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(input_panelLayout.createSequentialGroup()
@@ -254,7 +254,7 @@ public class Signup extends javax.swing.JFrame {
                                 .addComponent(invalidDOB, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(invalidEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(dob_textfield))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(52, 52, 52)
                         .addGroup(input_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(invalidPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(invalidAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -456,14 +456,14 @@ public class Signup extends javax.swing.JFrame {
 
   private void create_accountActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_create_accountActionPerformed        
     boolean isInputValid = true; 
-    invalidFirstName.setText("");
-    invalidLastName.setText("");
-    invalidDOB.setText("");
-    invalidAddress.setText("");
+    invalidFirstName.setText(" ");
+    invalidLastName.setText(" ");
+    invalidDOB.setText(" ");
+    invalidAddress.setText(" ");
     invalidEmail.setText("");
-    invalidPhoneNumber.setText("");
-    invalidPassword.setText("");
-    invalidRetypePassword.setText("");
+    invalidPhoneNumber.setText(" ");
+    invalidPassword.setText(" ");
+    invalidRetypePassword.setText(" ");
     if (firstName_textfield.getText().trim().isEmpty()) {
         invalidFirstName.setText("First Name field is Empty");
         isInputValid = false;
@@ -500,6 +500,7 @@ public class Signup extends javax.swing.JFrame {
         invalidPassword.setText("Password does not match");
         invalidRetypePassword.setText("Password does not match");
         isInputValid = false;
+        retype_password_passwordfield.setText("");
     }
     if (!terms_and_services_checkbox.isSelected()) {
         JOptionPane.showMessageDialog(null, "Please accept the terms and services", "Error", JOptionPane.ERROR_MESSAGE);
@@ -507,6 +508,8 @@ public class Signup extends javax.swing.JFrame {
     }
     if (isInputValid) {
         JOptionPane.showMessageDialog(null, "Your account has been successfully created!", "Success", JOptionPane.INFORMATION_MESSAGE);
+    new Login().setVisible(true);
+    this.dispose();
     }    
 }
     

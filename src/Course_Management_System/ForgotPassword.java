@@ -76,7 +76,7 @@ public class ForgotPassword extends javax.swing.JFrame {
         p3.setText("You will receive an email that contains a link to set a new password.");
 
         wlvIcon.setBackground(new java.awt.Color(255, 255, 255));
-        wlvIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/wlv_logo__1_-removebg-preview.png"))); // NOI18N
+        wlvIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/new wlv logo.png"))); // NOI18N
         wlvIcon.setMaximumSize(new java.awt.Dimension(500, 40));
 
         email_label.setBackground(new java.awt.Color(255, 255, 255));
@@ -144,28 +144,22 @@ public class ForgotPassword extends javax.swing.JFrame {
             .addGroup(FYPLayout.createSequentialGroup()
                 .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FYPLayout.createSequentialGroup()
-                        .addGap(86, 86, 86)
+                        .addGap(111, 111, 111)
+                        .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, FYPLayout.createSequentialGroup()
+                        .addGap(111, 111, 111)
                         .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(p2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(p1, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
                             .addGroup(FYPLayout.createSequentialGroup()
                                 .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(FYPLayout.createSequentialGroup()
-                                        .addGap(25, 25, 25)
-                                        .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(FYPLayout.createSequentialGroup()
-                                .addGap(25, 25, 25)
-                                .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(p2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(p1, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
-                                    .addGroup(FYPLayout.createSequentialGroup()
-                                        .addGroup(FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(email_label, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(p3)
-                                            .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(invalidEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(Reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 0, Short.MAX_VALUE))))))
+                                    .addComponent(email_label, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(p3)
+                                    .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(invalidEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(FYPLayout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addComponent(back_label)
@@ -174,6 +168,10 @@ public class ForgotPassword extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(signup_label, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(FYPLayout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         FYPLayout.setVerticalGroup(
             FYPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,8 +181,8 @@ public class ForgotPassword extends javax.swing.JFrame {
                     .addComponent(back_label, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(member_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(signup_label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(51, 51, 51)
-                .addComponent(wlvIcon, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
+                .addGap(55, 55, 55)
+                .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(FYP_label, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -193,7 +191,7 @@ public class ForgotPassword extends javax.swing.JFrame {
                 .addComponent(p2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(p3)
-                .addGap(69, 69, 69)
+                .addGap(40, 40, 40)
                 .addComponent(email_label)
                 .addGap(5, 5, 5)
                 .addComponent(emailTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -201,7 +199,7 @@ public class ForgotPassword extends javax.swing.JFrame {
                 .addComponent(invalidEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(1, 1, 1)
                 .addComponent(Reset_button, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
 
         getContentPane().add(FYP);
@@ -298,10 +296,8 @@ back_label.setFont(back_label.getFont().deriveFont(Font.BOLD));        // TODO a
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ForgotPassword().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new ForgotPassword().setVisible(true);
         });
     }
 

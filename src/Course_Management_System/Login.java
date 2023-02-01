@@ -79,7 +79,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        wlvIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/wlv_logo__1_-removebg-preview.png"))); // NOI18N
+        wlvIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/new wlv logo.png"))); // NOI18N
         wlvIcon.setMaximumSize(new java.awt.Dimension(500, 40));
 
         javax.swing.GroupLayout top_sectionLayout = new javax.swing.GroupLayout(top_section);
@@ -87,16 +87,12 @@ public class Login extends javax.swing.JFrame {
         top_sectionLayout.setHorizontalGroup(
             top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(top_sectionLayout.createSequentialGroup()
-                .addGroup(top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(top_sectionLayout.createSequentialGroup()
-                        .addGap(75, 75, 75)
-                        .addGroup(top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                            .addComponent(Welcome_text)
-                            .addComponent(loginGoogle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(top_sectionLayout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addGap(49, 49, 49)
+                .addGroup(top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(Welcome_text)
+                    .addComponent(loginGoogle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(wlvIcon, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         top_sectionLayout.setVerticalGroup(
             top_sectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -365,11 +361,6 @@ public class Login extends javax.swing.JFrame {
 
     private void loginGoogleActionPerformed(java.awt.event.ActionEvent evt) {
     }
-
-    private void emailTextFieldsActionPerformed(java.awt.event.ActionEvent evt) {
-
-    }
-
     private void keepmeLabelActionPerformed(java.awt.event.ActionEvent evt) {
     }
 

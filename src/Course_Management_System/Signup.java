@@ -81,6 +81,8 @@ public class Signup extends javax.swing.JFrame {
         signUp_panel.setPreferredSize(new java.awt.Dimension(600, 560));
 
         welcome.setBackground(new java.awt.Color(255, 255, 255));
+        welcome.setMinimumSize(new java.awt.Dimension(546, 130));
+        welcome.setPreferredSize(new java.awt.Dimension(546, 135));
 
         welcome_label.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         welcome_label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/logo.png"))); // NOI18N
@@ -116,7 +118,7 @@ public class Signup extends javax.swing.JFrame {
             .addGroup(welcomeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(welcome_label, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(4, 4, 4)
                 .addComponent(create_label)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lets_get_started_label, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -399,9 +401,11 @@ public class Signup extends javax.swing.JFrame {
         signUp_panel.setLayout(signUp_panelLayout);
         signUp_panelLayout.setHorizontalGroup(
             signUp_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(welcome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(input_panel, javax.swing.GroupLayout.PREFERRED_SIZE, 600, Short.MAX_VALUE)
             .addComponent(create_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(signUp_panelLayout.createSequentialGroup()
+                .addComponent(welcome, javax.swing.GroupLayout.DEFAULT_SIZE, 588, Short.MAX_VALUE)
+                .addContainerGap())
         );
         signUp_panelLayout.setVerticalGroup(
             signUp_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -434,7 +438,7 @@ public class Signup extends javax.swing.JFrame {
 
         getContentPane().add(wlv2, new org.netbeans.lib.awtextra.AbsoluteConstraints(584, 0, 2240, 560));
 
-        setSize(new java.awt.Dimension(1048, 595));
+        setSize(new java.awt.Dimension(1048, 601));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -575,10 +579,8 @@ public class Signup extends javax.swing.JFrame {
         // </editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Signup().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Signup().setVisible(true);
         });
     }
 

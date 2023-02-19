@@ -3,13 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/kaush/OneDrive/Desktop/Main/Java%20(Swing)/Course_Management_System/src/Course_Management_System/Main.java</file>
-            <file>file:/C:/Users/kaush/OneDrive/Desktop/Main/Java%20(Swing)/Course_Management_System/src/Course_Management_System/ExitConfirmationWindowListener.java</file>
-            <file>file:/C:/Users/kaush/OneDrive/Desktop/Main/Java%20(Swing)/Course_Management_System/src/Course_Management_System/Signup.java</file>
-            <file>file:/C:/Users/kaush/OneDrive/Desktop/Main/Java%20(Swing)/Course_Management_System/src/Course_Management_System/Google.java</file>
-            <file>file:/C:/Users/kaush/OneDrive/Desktop/Main/Java%20(Swing)/Course_Management_System/src/Course_Management_System/Login.java</file>
-            <file>file:/C:/Users/kaush/OneDrive/Desktop/Main/Java%20(Swing)/Course_Management_System/src/Course_Management_System/ForgotPassword.java</file>
-            <file>file:/C:/Users/kaush/OneDrive/Desktop/Main/Java%20(Swing)/Course_Management_System/src/Course_Management_System/Dashboard.java</file>
+            <file>file:/C:/Users/kaush/OneDrive/Documents/Course_management_system/Course-Management-System/src/primary/Teacher.java</file>
+            <file>file:/C:/Users/kaush/OneDrive/Documents/Course_management_system/Course-Management-System/src/primary/Student.java</file>
+            <file>file:/C:/Users/kaush/OneDrive/Documents/Course_management_system/Course-Management-System/src/primary/Course.java</file>
+            <file>file:/C:/Users/kaush/OneDrive/Documents/Course_management_system/Course-Management-System/src/secondary/Login_.java</file>
+            <file>file:/C:/Users/kaush/OneDrive/Documents/Course_management_system/Course-Management-System/src/primary/Dashboard.java</file>
+            <file>file:/C:/Users/kaush/OneDrive/Documents/Course_management_system/Course-Management-System/src/secondary/Main.java</file>
+            <file>file:/C:/Users/kaush/OneDrive/Documents/Course_management_system/Course-Management-System/src/dataBase/MyConnection.java</file>
         </group>
     </open-files>
 </project-private>

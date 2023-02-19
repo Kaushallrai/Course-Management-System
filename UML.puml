@@ -1,0 +1,7 @@
+@startuml
+class dataBase.MyConnection
+class java.sql.Connection
+class java.sql.DriverManager
+dataBase.MyConnection ..> java.sql.Connection
+dataBase.MyConnection ..> java.sql.DriverManager
+@enduml
